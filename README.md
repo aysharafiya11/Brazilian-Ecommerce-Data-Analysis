@@ -58,6 +58,10 @@ The original data consists of multiple related tables connected through primary 
 - ⭐ 99,000+ Reviews
 - 💳 100,000+ Payments
 
+### Time Period
+
+- 📅 Orders from **2016–2018**
+
 ---
 
 ## 🔗 Dataset Source
