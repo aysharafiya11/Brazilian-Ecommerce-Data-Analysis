@@ -5,12 +5,29 @@
 ![SQL](https://img.shields.io/badge/SQL-Analysis-green)
 ![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
 
+<p align="center">
+  <img src="Images/executive-sales-dashboard.png"
+       alt="Brazilian E-Commerce Dashboard"
+       width="1000">
+</p>
 
 ## 📌 Project Overview
 
 This project analyzes the **Brazilian E-Commerce Public Dataset by Olist** using **MySQL** for data analysis and **Power BI** for interactive dashboard visualization.
 
 The objective is to uncover valuable business insights related to sales performance, customer behavior, seller performance, payment methods, product categories, and delivery efficiency.
+
+---
+
+## 🎯 Project Objectives
+
+The primary objectives of this project are to:
+
+- Analyze sales performance across Brazil.
+- Understand customer purchasing behavior.
+- Identify top-performing sellers and products.
+- Evaluate payment trends and order patterns.
+- Build an interactive business intelligence dashboard using Power BI.
 
 ---
 
@@ -32,8 +49,6 @@ The dataset contains information about:
 
 The original data consists of multiple related tables connected through primary and foreign keys.
 
----
-
 ### Dataset Statistics
 
 - 📦 99,000+ Orders
@@ -45,6 +60,14 @@ The original data consists of multiple related tables connected through primary 
 
 ---
 
+## 🔗 Dataset Source
+
+Brazilian E-Commerce Public Dataset by Olist
+
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+---
+
 ## 🗄 Database Schema (ER Diagram)
 
 ![ER Diagram](Images/ER_Diagram.png)
@@ -53,53 +76,78 @@ The original data consists of multiple related tables connected through primary 
 
 ## ❓ SQL Business Questions
 
-### Sales Analysis
+The SQL analysis addresses a wide range of business problems using joins, aggregations, subqueries, Common Table Expressions (CTEs), and window functions.
 
-- Total Revenue
-- Monthly Sales Trend
-- Average Order Value
+### 📦 Order Analysis
+- What is the total number of orders by status?
+- What is the average order processing and delivery time?
+- How do monthly order volumes change over time?
+- Which orders were delivered later than the estimated delivery date?
+- Which orders contain multiple products or multiple sellers?
 
-### Customer Analysis
+### 👥 Customer Analysis
+- How many unique customers, cities, and states are represented?
+- Which states and cities have the highest customer concentration?
+- Who are the top customers by total spending?
+- Which customers spend more than the average customer?
+- What is the customer purchase history over time?
+- What percentage of customers are repeat buyers?
 
-- Top Customers
-- Customer Distribution by State
-- Repeat Customers
+### 🏪 Seller Analysis
+- Who are the top-performing sellers by revenue and order count?
+- Which seller states generate the highest revenue?
+- Which sellers earn above the marketplace average?
+- What is the average delivery time for each seller?
+- How is seller performance ranked using SQL window functions?
 
-### Seller Analysis
+### 📦 Product Analysis
+- Which product categories generate the highest revenue?
+- Which products generate the highest sales?
+- Which product categories have the highest freight costs?
+- Which products have never been purchased?
+- Which product categories contain the most products?
 
-- Top Sellers
-- Seller Revenue
-- Seller Order Count
+### 💳 Payment Analysis
+- Which payment methods are most frequently used?
+- Which orders used multiple payment methods?
+- Which orders have payment values above the average?
+- What is the installment distribution across payments?
 
-### Product Analysis
+### 🚚 Delivery Analysis
+- What is the average delivery time?
+- Which orders were delayed?
+- How does delivery performance vary by seller?
 
-- Top Categories
-- Best-selling Products
-- Category Revenue
+### 📊 Revenue & Sales Analysis
+- What is the total marketplace revenue?
+- How does revenue change month over month?
+- Which states generate above-average revenue?
+- What are the monthly revenue trends?
+- What is the cumulative revenue over time?
 
-### Delivery Analysis
-
-- Average Delivery Time
-- Late Deliveries
-
-### Payment Analysis
-
-- Payment Methods
-- Installment Analysis
+### 🚀 Advanced SQL Analysis
+- Customer spending ranking using **ROW_NUMBER()**
+- Seller ranking using **RANK()**
+- Product ranking using **DENSE_RANK()**
+- Previous and next month sales using **LAG()** and **LEAD()**
+- Customer segmentation using **NTILE()**
+- Running revenue and cumulative order analysis
+- Advanced joins across customers, orders, sellers, products, reviews, and payments
+- Business insights using subqueries and CTEs
 
 ---
 
 ## 📊 Power BI Dashboard
 
-The interactive dashboard includes:
+The Power BI dashboard consists of five interactive report pages:
 
-- Executive Overview
-- Sales Analysis
-- Customer Analysis
-- Seller Analysis
-- Product Analysis
+- 📈 Executive Sales Dashboard
+- 💹 Sales Analysis Dashboard
+- 👥 Customer Analysis Dashboard
+- 🏪 Seller Analysis Dashboard
+- 📦 Product Analysis Dashboard
 
-Dashboard Features
+### Dashboard Features
 
 ✔ Interactive Filters
 
@@ -226,8 +274,8 @@ Brazilian-Ecommerce-Data-Analysis/
 │   ├── 03_Foreign_Keys.sql
 │   ├── 04_Data_Cleaning.sql
 │   ├── 05_Data_Analysis.sql
-|   ├── 06_Data_Analysis.sql
-|   ├── 07_Data_Analysis.sql
+│   ├── 06_Data_Analysis.sql
+│   ├── 07_Data_Analysis.sql
 │   └── 08_Data_Analysis.sql
 │
 ├── PowerBI/
@@ -248,6 +296,21 @@ Brazilian-Ecommerce-Data-Analysis/
 
 ---
 
+## 📜 SQL Scripts Overview
+
+| File | Description |
+|------|-------------|
+| 01_Create_Database.sql | Creates the database and tables |
+| 02_Import_Data.sql | Imports the Olist dataset |
+| 03_Foreign_Keys.sql | Defines relationships between tables |
+| 04_Data_Cleaning.sql | Handles missing values and data quality |
+| 05_Data_Analysis.sql | Beginner SQL queries using aggregates and GROUP BY |
+| 06_Data_Analysis.sql | Intermediate SQL using JOINs |
+| 07_Data_Analysis.sql | Advanced SQL using Subqueries and CTEs |
+| 08_Data_Analysis.sql | Window Functions (ROW_NUMBER, RANK, LAG, LEAD, NTILE, etc.) |
+
+---
+
 ## 🚀 Skills Demonstrated
 
 - SQL Joins
@@ -263,6 +326,8 @@ Brazilian-Ecommerce-Data-Analysis/
 - Dashboard Design
 
 ---
+
+## 🛠 Tools Used
 
 | Tool | Purpose |
 |------|---------|
@@ -281,7 +346,7 @@ Brazilian-Ecommerce-Data-Analysis/
 1. Clone this repository.
 2. Create the database and all tables using `01_Create_Database.sql`.
 3. Import the dataset using `02_Import_Data.sql`.
-4. Create Foreign Keys using `03_Foreign_Keys.sql`.
+4. Create relationship between tables using `03_Foreign_Keys.sql`.
 5. Perform data cleaning using `04_Data_Cleaning.sql`.
 6. Execute `05_Data_Analysis.sql`, `06_Data_Analysis.sql`, `07_Data_Analysis.sql` and `08_Data_Analysis.sql` to generate business insights.
 7. Open `ecommerce_project.pbix` in Power BI Desktop to explore the interactive dashboard.
@@ -292,10 +357,25 @@ Brazilian-Ecommerce-Data-Analysis/
 
 **Aysha Rafiya**
 
-- Electronics & Communication Engineering Graduate
-- Aspiring Data Analyst
-- Skilled in SQL, Power BI, Excel, Python, and Data Analytics
+Electronics & Communication Engineering Graduate transitioning into Data Analytics.
+
+### Technical Skills
+
+- SQL
+- MySQL
+- Power BI
+- Excel
+- Python
+- Git & GitHub
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project useful or interesting, consider giving it a ⭐ on GitHub.
