@@ -1,5 +1,11 @@
 # 🛒 Brazilian E-Commerce Data Analysis using SQL & Power BI
 
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811)
+![SQL](https://img.shields.io/badge/SQL-Analysis-green)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)
+
+
 ## 📌 Project Overview
 
 This project analyzes the **Brazilian E-Commerce Public Dataset by Olist** using **MySQL** for data analysis and **Power BI** for interactive dashboard visualization.
@@ -28,6 +34,17 @@ The original data consists of multiple related tables connected through primary 
 
 ---
 
+### Dataset Statistics
+
+- 📦 99,000+ Orders
+- 👥 99,000+ Customers
+- 🏪 3,000+ Sellers
+- 📦 32,000+ Products
+- ⭐ 99,000+ Reviews
+- 💳 100,000+ Payments
+
+---
+
 ## 🗄 Database Schema (ER Diagram)
 
 ![ER Diagram](Images/ER_Diagram.png)
@@ -36,21 +53,39 @@ The original data consists of multiple related tables connected through primary 
 
 ## ❓ SQL Business Questions
 
-This project answers several business questions, including:
+### Sales Analysis
 
-- What is the total revenue generated?
-- Which states generate the highest revenue?
-- What are the monthly sales trends?
-- Who are the top-performing sellers?
-- Which product categories generate the highest sales?
-- What payment methods are most frequently used?
-- Which customers spend the most?
-- How long do deliveries take on average?
-- Which orders were delivered late?
-- What are the customer review trends?
-- Which products generate the highest revenue?
+- Total Revenue
+- Monthly Sales Trend
+- Average Order Value
 
-More than **30 business queries** were solved using SQL.
+### Customer Analysis
+
+- Top Customers
+- Customer Distribution by State
+- Repeat Customers
+
+### Seller Analysis
+
+- Top Sellers
+- Seller Revenue
+- Seller Order Count
+
+### Product Analysis
+
+- Top Categories
+- Best-selling Products
+- Category Revenue
+
+### Delivery Analysis
+
+- Average Delivery Time
+- Late Deliveries
+
+### Payment Analysis
+
+- Payment Methods
+- Installment Analysis
 
 ---
 
@@ -63,6 +98,20 @@ The interactive dashboard includes:
 - Customer Analysis
 - Seller Analysis
 - Product Analysis
+
+Dashboard Features
+
+✔ Interactive Filters
+
+✔ KPI Cards
+
+✔ Drill-through Reports
+
+✔ Dynamic DAX Measures
+
+✔ Trend Analysis
+
+✔ Category Comparison
 
 ---
 
@@ -98,25 +147,59 @@ The interactive dashboard includes:
 
 ---
 
+## 📊 Project Highlights
+
+- 💰 Total Revenue: **R$16.01M**
+- 📦 Total Orders: **99K**
+- 👥 Unique Customers: **96K**
+- 🛍 Product Categories: **74**
+- 🏪 Total Sellers: **3K**
+- 🔁 Repeat Customer Rate: **3.12%**
+- 💵 Average Order Value: **R$160.99**
+- 💳 Average Revenue per Customer: **R$166.59**
+
+---
+
 ## 💡 Key Insights
 
-- Revenue is concentrated in a few major Brazilian states.
-- Credit Card is the most preferred payment method.
-- A small percentage of sellers contribute significantly to total revenue.
-- Some product categories consistently outperform others.
-- Most deliveries are completed on time, while delayed deliveries negatively impact customer ratings.
-- Customers who receive orders on time generally provide higher review scores.
+#### 📈 Sales Insights
+
+- The platform generated **R$16.01M** in total revenue from approximately **99K orders** placed by **96K unique customers**.
+-  Sales peaked during the **March–August period**, indicating strong mid-year demand, while a noticeable decline occurred in **September** before recovering toward the end of the year.
+- **São Paulo (SP)** contributed the highest number of orders and generated the largest share of revenue among all Brazilian states.
+
+#### 🛍 Product Insights
+
+- The **Health & Beauty category** generated the highest revenue, followed by **Watches & Gifts**, **Bed, Bath & Table**, and **Sports & Leisure**.
+- The dataset contains **74 product categories**, showing a diverse product portfolio.
+- The average product price was approximately **R$120.65**, indicating that most purchases were in the affordable to mid-range price segment.
+- Product revenue is concentrated in a small number of high-performing categories, while several categories contribute only a minor share of total sales.
+
+#### 👥 Customer Insights
+
+- The platform served approximately 96K unique customers, with around **3K repeat customers**, resulting in a **3.12% repeat customer** rate.
+- The average revenue generated per customer was **R$166.59**.
+- Customer distribution is heavily concentrated in **São Paulo (SP)**, followed by Rio de Janeiro (RJ) and Minas Gerais (MG).
+- A relatively small number of customers generated the highest individual revenues, highlighting opportunities for customer retention and loyalty programs.
+
+#### 🏪 Seller Insights
+
+- More than **3K sellers** participated in the marketplace, generating approximately **R$13.59M** in product revenue.
+- The average revenue per seller was approximately **R$4.39K**.
+- Sellers located in **São Paulo (SP)** generated the highest revenue and fulfilled the largest number of orders.
+- Revenue distribution among sellers is uneven, with a small group of top-performing sellers contributing a significant portion of total sales.
 
 ---
 
 ## 📈 Business Recommendations
 
-- Increase marketing efforts in high-performing states.
-- Improve logistics to reduce late deliveries.
-- Reward top-performing sellers through incentive programs.
-- Promote high-revenue product categories.
-- Encourage digital payment methods for faster processing.
-- Monitor customer reviews regularly to improve satisfaction.
+- **Increase customer retention** by introducing loyalty programs and personalized offers to improve the repeat customer rate.
+- **Expand successful product categories**, such as Health & Beauty and Watches & Gifts, through targeted marketing and inventory optimization.
+- **Support sellers in lower-performing states** with promotional campaigns and training to improve regional sales performance.
+- **Optimize inventory planning** ahead of peak sales months to meet increased customer demand.
+- **Focus marketing efforts on high-performing regions**, while exploring growth opportunities in states with lower customer penetration.
+- **Strengthen relationships with top-performing sellers** by providing incentives, exclusive campaigns, and performance-based rewards.
+- **Monitor under-performing product categories** to determine whether they should be improved, re-positioned, or phased out.
 
 ---
 
@@ -140,7 +223,7 @@ Brazilian-Ecommerce-Data-Analysis/
 ├── SQL/
 │   ├── 01_Create_Database.sql
 │   ├── 02_Import_Data.sql
-│   ├── 03_Foriegn_Keys.sql
+│   ├── 03_Foreign_Keys.sql
 │   ├── 04_Data_Cleaning.sql
 │   ├── 05_Data_Analysis.sql
 |   ├── 06_Data_Analysis.sql
@@ -165,15 +248,31 @@ Brazilian-Ecommerce-Data-Analysis/
 
 ---
 
-## 🛠 Tools Used
+## 🚀 Skills Demonstrated
 
-- MySQL
-- SQL
-- Power BI
+- SQL Joins
+- Common Table Expressions (CTEs)
+- Window Functions
+- Aggregate Functions
+- Data Cleaning
+- Data Modeling
+- Foreign Keys
 - Power Query
-- DAX
-- Git
-- GitHub
+- DAX Measures
+- Data Visualization
+- Dashboard Design
+
+---
+
+| Tool | Purpose |
+|------|---------|
+| MySQL | Database Management |
+| SQL | Data Analysis |
+| Power BI | Dashboard & Visualization |
+| Power Query | Data Transformation |
+| DAX | Calculated Measures |
+| Git | Version Control |
+| GitHub | Project Hosting |
 
 ---
 
