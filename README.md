@@ -63,40 +63,38 @@ The interactive dashboard includes:
 - Customer Analysis
 - Seller Analysis
 - Product Analysis
-- Payment Analysis
-- Delivery Performance
 
 ---
 
 ## 📸 Dashboard Screenshots
 
-### Dashboard Overview
+### Executive Overview
 
-![Dashboard Overview](Images/Dashboard_Overview.png)
+![Executive Overview](Images/executive-sales-dashboard.png)
 
 ---
 
 ### Sales Analysis
 
-![Sales Analysis](Images/Sales_Analysis.png)
+![Sales Analysis](Images/sales-analysis-dashboard.png)
 
 ---
 
 ### Customer Analysis
 
-![Customer Analysis](Images/Customer_Analysis.png)
+![Customer Analysis](Images/customer-analysis-dashboard.png)
 
 ---
 
 ### Seller Analysis
 
-![Seller Analysis](Images/Seller_Analysis.png)
+![Seller Analysis](Images/seller-analysis-dashboard.png)
 
 ---
 
 ### Product Analysis
 
-![Product Analysis](Images/Product_Analysis.png)
+![Product Analysis](Images/product-analysis-dashboard.png)
 
 ---
 
@@ -128,25 +126,36 @@ The interactive dashboard includes:
 Brazilian-Ecommerce-Data-Analysis/
 │
 ├── Dataset/
-│   ├── olist_dataset.csv
+│   ├── olist_customers_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   ├── olist_product_category_name_translation.csv
+│   ├── olist_geolocation_dataset.csv
 │   └── data_dictionary.md
 │
 ├── SQL/
 │   ├── 01_Create_Database.sql
-│   ├── 02_Create_Tables.sql
-│   ├── 03_Import_Data.sql
+│   ├── 02_Import_Data.sql
+│   ├── 03_Foriegn_Keys.sql
 │   ├── 04_Data_Cleaning.sql
-│   └── 05_Data_Analysis.sql
+│   ├── 05_Data_Analysis.sql
+|   ├── 06_Data_Analysis.sql
+|   ├── 07_Data_Analysis.sql
+│   └── 08_Data_Analysis.sql
 │
 ├── PowerBI/
-│   └── Ecommerce_Dashboard.pbix
+│   └── ecommerce_project.pbix
 │
 ├── Images/
-│   ├── Dashboard_Overview.png
-│   ├── Sales_Analysis.png
-│   ├── Customer_Analysis.png
-│   ├── Seller_Analysis.png
-│   ├── Product_Analysis.png
+│   ├── executive-sales-dashboard.png
+│   ├── sales-analysis-dashboard.png
+│   ├── customer-analysis-dashboard.png
+│   ├── seller-analysis-dashboard.png
+│   ├── product-analysis-dashboard.png
 │   └── ER_Diagram.png
 │
 ├── README.md
@@ -171,12 +180,12 @@ Brazilian-Ecommerce-Data-Analysis/
 ## ▶️ How to Run the Project
 
 1. Clone this repository.
-2. Create the database using `01_Create_Database.sql`.
-3. Create all tables using `02_Create_Tables.sql`.
-4. Import the dataset using `03_Import_Data.sql`.
+2. Create the database and all tables using `01_Create_Database.sql`.
+3. Import the dataset using `02_Import_Data.sql`.
+4. Create Foreign Keys using `03_Foreign_Keys.sql`.
 5. Perform data cleaning using `04_Data_Cleaning.sql`.
-6. Execute `05_Data_Analysis.sql` to generate business insights.
-7. Open `Ecommerce_Dashboard.pbix` in Power BI Desktop to explore the interactive dashboard.
+6. Execute `05_Data_Analysis.sql`, `06_Data_Analysis.sql`, `07_Data_Analysis.sql` and `08_Data_Analysis.sql` to generate business insights.
+7. Open `ecommerce_project.pbix` in Power BI Desktop to explore the interactive dashboard.
 
 ---
 
