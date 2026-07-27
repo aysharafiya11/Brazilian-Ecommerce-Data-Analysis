@@ -30,8 +30,6 @@ The original data consists of multiple related tables connected through primary 
 
 ## 🗄 Database Schema (ER Diagram)
 
-> Add your ER Diagram here.
-
 ![ER Diagram](Images/ER_Diagram.png)
 
 ---
